@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.RegisterFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/linear_layout"
+        android:paddingVertical="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Registration Form"
+        android:textColor="#222"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        style="@style/edit_text"
+        />
+
+    <EditText
+        android:id="@+id/reg_dob"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date of Birth"
+        style="@style/edit_text"
+        />
+
+    <EditText
+        android:id="@+id/reg_phone"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        style="@style/edit_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Gender"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:id="@+id/reg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Female"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="18dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        style="@style/edit_text"
+        />
+
+    <EditText
+        android:id="@+id/reg_con_password"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        style="@style/edit_text"
+        />
+
+    <Button
+        android:id="@+id/reg_submit"
+        android:text="Register"
+        style="@style/s_button"
+        />
+    </LinearLayout>
+
+</ScrollView>

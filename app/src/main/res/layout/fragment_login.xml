@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.LoginFragment"
+    style="@style/linear_layout"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Login Form"
+        android:textColor="#222"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/login_username"
+        android:hint="Username"
+        style="@style/edit_text"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        style="@style/edit_text"
+        />
+
+    <Button
+        android:id="@+id/login_submit"
+        android:text="Login"
+        style="@style/s_button"
+        />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/login_register"
+        android:text="Sign Up"
+        style="@style/s_button"
+        />
+
+</LinearLayout>
